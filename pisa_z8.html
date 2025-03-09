@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wewnętrzny arkusz stylów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #ddae00; /* Kolor czcionki */
+            background-color: #514bd0; /* Kolor tła */
+        }
+        pre {
+            background-color: #514bd0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wewnętrzny arkusz stylów</h1>
+
+    <ol>
+        <li>
+            <strong>Gdzie jest wstawiany?</strong>
+            <p>Wewnętrzny arkusz stylów jest wstawiany w sekcji <code>&lt;head&gt;</code> dokumentu HTML, wewnątrz znacznika <code>&lt;style&gt;</code>. Znajduje się między otwierającym a zamykającym tagiem <code>&lt;style&gt;</code>.</p>
+        </li>
+
+        <li>
+            <strong>Składnia teoretyczna (w ramce, konieczne wcięcia)</strong>
+            <p>Składnia wewnętrznego arkusza stylów wygląda następująco:</p>
+            <pre>
+&lt;style&gt;
+    body {
+        font-family: Arial, sans-serif;
+        color: #ddae00;
+    }
+    p {
+        margin: 10px;
+        font-size: 14px;
+    }
+&lt;/style&gt;
+            </pre>
+        </li>
+
+        <li>
+            <strong>Jakie mogą być selektory?</strong>
+            <p>Selektory w wewnętrznym arkuszu stylów mogą być:</p>
+            <ul>
+                <li>Tagi HTML (np. <code>h1</code>, <code>p</code>, <code>div</code>),</li>
+                <li>Klasy (<code>.nazwa-klasy</code>),</li>
+                <li>Identyfikatory (<code>#nazwa-id</code>),</li>
+                <li>Grupy selektorów (np. <code>h1, p</code>). </li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Jakie mogą być cechy i wartości?</strong>
+            <p>Cechy (właściwości) w CSS to np.:</p>
+            <ul>
+                <li><code>color</code> - kolor tekstu,</li>
+                <li><code>font-size</code> - rozmiar czcionki,</li>
+                <li><code>background-color</code> - kolor tła,</li>
+                <li><code>margin</code> - marginesy,</li>
+                <li><code>padding</code> - wypełnienie.</li>
+            </ul>
+            <p>Wartości przypisane do cech to np.:</p>
+            <ul>
+                <li><code>color: red;</code></li>
+                <li><code>font-size: 16px;</code></li>
+                <li><code>background-color: #ff0000;</code></li>
+                <li><code>margin: 10px;</code></li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+</html>

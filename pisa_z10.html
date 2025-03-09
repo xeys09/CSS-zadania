@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budowa selektora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #ddae00; 
+            background-color: #514bd0;
+        }
+        pre {
+            background-color: #514bd0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Budowa selektora</h1>
+
+    <ol>
+        <li>
+            <strong>Wymienić oraz opisz dwie części selektora</strong>
+            <p>Selektor CSS składa się z dwóch głównych części:</p>
+            <ul>
+                <li><strong>Selekcja</strong>: Określa, do jakich elementów HTML mają być przypisane style. Przykłady selektorów to tagi (np. <code>div</code>, <code>p</code>), klasy (np. <code>.nazwa-klasy</code>) oraz identyfikatory (np. <code>#nazwa-id</code>).</li>
+                <li><strong>Deklaracje</strong>: Określają, jakie właściwości i wartości mają zostać przypisane do wybranych elementów. Deklaracje zawierają pary „właściwość: wartość”.</li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Znaczenie nawiasów klamrowych {...}</strong>
+            <p>Nawiasy klamrowe <code>{...}</code> są używane do grupowania deklaracji w selektorze. Wszystkie deklaracje dotyczące danego elementu lub grupy elementów są umieszczane wewnątrz nawiasów klamrowych. Każda deklaracja jest zakończona średnikiem.</p>
+        </li>
+
+        <li>
+            <strong>Opisz cechy</strong>
+            <p>Cechy (właściwości) w CSS to elementy, które definiują wygląd wybranych elementów. Cechy są zapisane przed dwukropkiem i mogą obejmować:</p>
+            <ul>
+                <li><code>color</code> – kolor tekstu,</li>
+                <li><code>font-size</code> – rozmiar czcionki,</li>
+                <li><code>background-color</code> – kolor tła,</li>
+                <li><code>margin</code> – marginesy,</li>
+                <li><code>padding</code> – wypełnienie elementu.</li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Opisz wartości</strong>
+            <p>Wartości to przypisane parametry do cech. Są to np.:</p>
+            <ul>
+                <li><code>color: red;</code> – ustawia kolor tekstu na czerwony,</li>
+                <li><code>font-size: 16px;</code> – ustawia rozmiar czcionki na 16 pikseli,</li>
+                <li><code>background-color: #ff0000;</code> – ustawia kolor tła na czerwony (hexadecimalna wartość),</li>
+                <li><code>margin: 10px;</code> – ustawia margines na 10 pikseli.</li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Kiedy stosujemy znak średnika (;), kiedy nie jest konieczny?</strong>
+            <p>Średnik (<code>;</code>) jest używany do oddzielania deklaracji w selektorze. Należy go stosować po każdej deklaracji, z wyjątkiem ostatniej w danym bloku stylów. Jeśli deklaracja jest ostatnia, średnik jest opcjonalny, ale dla spójności i łatwości rozwoju kodu zaleca się jego używanie.</p>
+        </li>
+    </ol>
+
+</body>
+</html>

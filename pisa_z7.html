@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opis styl lokalny, liniowy, linijkowy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #ddae00; 
+            background-color: #514bd0; 
+        }
+        pre {
+            background-color: #514bd0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Opis styl lokalny, liniowy, linijkowy</h1>
+
+    <ol>
+        <li>
+            <strong>Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu lokalnego?</strong>
+            <p>Styl lokalny pozwala na formatowanie tylko jednego, wybranego elementu HTML w dokumencie. Zastosowanie stylu lokalnego pozwala na określenie wyglądu konkretnego elementu, np. paragrafu, nagłówka lub innego tagu HTML, bez wpływania na inne elementy na stronie.</p>
+        </li>
+
+        <li>
+            <strong>Składnia teoretyczna (z użyciem ramki otaczającej)</strong>
+            <p>Składnia stylu lokalnego wygląda następująco:</p>
+            <pre>&lt;style&gt; p { color: red; } &lt;/style&gt;</pre>
+            <p>Aby wyświetlić definicję w ramce, możemy użyć specjalnych znaków:</p>
+            <pre>&lt;pre&gt;&amp;lt;style&amp;gt; p { color: red; } &amp;lt;/style&amp;gt;&lt;/pre&gt;</pre>
+        </li>
+
+        <li>
+            <strong>Co może być selektorem?</strong>
+            <p>Selektorem w CSS może być tag HTML (np. <code>h1</code>, <code>p</code>), klasa (<code>.nazwa-klasy</code>), identyfikator (<code>#nazwa-id</code>), a także atrybuty elementów. Selektory służą do wskazania, które elementy mają zostać objęte stylem.</p>
+        </li>
+
+        <li>
+            <strong>Co wpisujemy jako "cechę". Jakie jest znaczenie średników?</strong>
+            <p>"Cechą" w deklaracji CSS jest właściwość, którą chcemy zmienić, np. <code>color</code>, <code>font-size</code>, <code>background-color</code>. Średnik (<code>;</code>) jest używany do oddzielania poszczególnych deklaracji w jednej regule CSS, co pozwala na uporządkowanie różnych właściwości dla jednego elementu.</p>
+        </li>
+
+        <li>
+            <strong>Co wpisujemy jako "wartość" (w deklaracji stylu)?</strong>
+            <p>"Wartość" w deklaracji stylu to wartość przypisana do cechy, np. dla <code>color</code> wartością może być <code>red</code>, <code>#FF0000</code>, lub <code>rgb(255, 0, 0)</code>. Wartość ta określa, jak ma wyglądać dana cecha.</p>
+        </li>
+    </ol>
+
+</body>
+</html>

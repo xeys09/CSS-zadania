@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodzaje selektorów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #ddae00;
+            background-color: #514bd0;
+        }
+        pre {
+            background-color: #514bd0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rodzaje selektorów</h1>
+
+    <ol>
+        <li>
+            <strong>Selektory podstawowe</strong>
+            <ol>
+                <li><strong>Selektor elementu (tagu)</strong>
+                    <p>Selekcja wszystkich elementów o określonym tagu, np. <code>div</code>, <code>p</code>.</p>
+                </li>
+                <li><strong>Selektor klasy</strong>
+                    <p>Selekcja elementów, które posiadają określoną klasę, np. <code>.klasa</code>.</p>
+                </li>
+                <li><strong>Selektor identyfikatora</strong>
+                    <p>Selekcja elementu o określonym identyfikatorze, np. <code>#id</code>.</p>
+                </li>
+            </ol>
+        </li>
+
+        <li>
+            <strong>Selektory złożone</strong>
+            <ol>
+                <li><strong>Selektor grupujący</strong>
+                    <p>Łączy kilka selektorów w jeden, np. <code>h1, h2, h3</code>, wybiera wszystkie nagłówki od <code>h1</code> do <code>h3</code>.</p>
+                </li>
+                <li><strong>Selektor potomka</strong>
+                    <p>Wybiera elementy będące potomkami innego elementu, np. <code>div p</code> (wszystkie <code>p</code> wewnątrz <code>div</code>).</p>
+                </li>
+                <li><strong>Selektor dziecka</strong>
+                    <p>Wybiera tylko bezpośrednich dzieci elementu, np. <code>div > p</code> (tylko <code>p</code> bezpośrednio wewnątrz <code>div</code>).</p>
+                </li>
+            </ol>
+        </li>
+
+        <li>
+            <strong>Selektory atrybutów</strong>
+            <ol>
+                <li><strong>Selektor atrybutu</strong>
+                    <p>Selekcja elementów na podstawie wartości ich atrybutów, np. <code>input[type="text"]</code> (wszystkie elementy <code>input</code> z atrybutem <code>type="text"</code>).</p>
+                </li>
+                <li><strong>Selektor zawierający atrybut</strong>
+                    <p>Wybiera elementy, które zawierają określony atrybut, np. <code>a[href]</code> (wszystkie linki z atrybutem <code>href</code>).</p>
+                </li>
+            </ol>
+        </li>
+
+        <li>
+            <strong>Selektory pseudo-klasowe i pseudo-elementy</strong>
+            <ol>
+                <li><strong>Pseudo-klasa</strong>
+                    <p>Selekcja elementów na podstawie ich stanu, np. <code>a:hover</code> (linki w stanie najechania kursorem).</p>
+                </li>
+                <li><strong>Pseudo-element</strong>
+                    <p>Selekcja części elementu, np. <code>p::first-letter</code> (pierwsza litera w akapicie).</p>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opis stylu zewnętrznego</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #ddae00;
+            background-color: #514bd0;
+        }
+        pre {
+            background-color: #514bd0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Opis stylu zewnętrznego</h1>
+
+    <ol>
+        <li>
+            <strong>Składnia teoretyczna → otoczony ramką (może być tabela jedno komórkowa, konieczne wcięcia)</strong>
+            <p>Składnia zewnętrznego arkusza stylów CSS:</p>
+            <pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+            </pre>
+        </li>
+
+        <li>
+            <strong>Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować w dokumencie, jako podłączenie stylu CSS?</strong>
+            <p>Styl zewnętrzny wstawiany jest w sekcji <code>&lt;head&gt;</code> dokumentu HTML, za pomocą znacznika <code>&lt;link&gt;</code>. Znacznik ten może występować w dokumencie tylko raz, ponieważ każdy dokument HTML powinien mieć jeden plik CSS zewnętrzny, chociaż można podłączyć kilka plików CSS.</p>
+        </li>
+
+        <li>
+            <strong>Jak jest najprostsza forma wstawiania stylu zewnętrznego → otoczony ramką (może być tabela jedno komórkowa)?</strong>
+            <p>Najprostsza forma wstawiania stylu zewnętrznego to:</p>
+            <pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+            </pre>
+        </li>
+
+        <li>
+            <strong>Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasada musi być zachowana przy większej ilości dołączanych styli?</strong>
+            <p>Do jednego dokumentu HTML może być dołączonych wiele arkuszy stylów zewnętrznych. Należy pamiętać, że arkusze styli są dołączane w odpowiedniej kolejności, ponieważ styl zdefiniowany później ma wyższy priorytet i może nadpisać poprzedni.</p>
+        </li>
+
+        <li>
+            <strong>Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style są definiowane w różnych arkuszach styli podłączone do tego samego arkusza.</strong>
+            <p>W przypadku konfliktu, czyli gdy te same style są zdefiniowane w różnych arkuszach styli, priorytet ma arkusz dołączony później, co oznacza, że jego definicje nadpiszą wcześniejsze.</p>
+        </li>
+
+        <li>
+            <strong>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</strong>
+            <p>Pliki arkuszy styli są tworzone i edytowane za pomocą edytora tekstowego, jak np. Notepad, Sublime Text, czy Visual Studio Code. Wystarczy zapisać plik z rozszerzeniem .css, aby stał się on plikiem arkusza stylów.</p>
+        </li>
+
+        <li>
+            <strong>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</strong>
+            <p>W przypadku specjalnych edytorów CSS, jak np. Adobe Dreamweaver, użytkownik korzysta z interfejsu graficznego, który ułatwia tworzenie i edytowanie stylów. Można również korzystać z podglądu na żywo, aby zobaczyć, jak wprowadzone zmiany wpływają na wygląd strony.</p>
+        </li>
+
+        <li>
+            <strong>Jakie rozszerzenie posiada plik będący zewnętrznym arkuszem styli?</strong>
+            <p>Plik będący zewnętrznym arkuszem stylów posiada rozszerzenie <code>.css</code>.</p>
+        </li>
+
+        <li>
+            <strong>Jakie są zalety zewnętrznego arkusza styli (dwie – z użyciem wyliczenia)?</strong>
+            <ul>
+                <li>Centralizacja stylów – łatwiejsza edycja i zarządzanie wyglądem strony w jednym pliku.</li>
+                <li>Optymalizacja – możliwa ponowna używalność arkusza styli na wielu stronach, co zmniejsza czas ładowania.</li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Uwagi na temat pisania w CSS.</strong>
+            <p>Przy pisaniu CSS należy przestrzegać kilku zasad:</p>
+            <ul>
+                <li>Używać właściwych selektorów, które będą pasować do elementów HTML.</li>
+                <li>Zachować odpowiednią składnię (np. nawiasy, średniki). Unikać błędów w deklaracjach.</li>
+                <li>Dbać o przejrzystość kodu – używać wcięć i komentarzy.</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+</html>
